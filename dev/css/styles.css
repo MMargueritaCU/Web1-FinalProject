@@ -332,11 +332,13 @@ ul {
 ============= */
 h1, h2, h3, h4, h5 {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-weight: 400; }
 
 p {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-weight: 400; }
 
 /* =============
     Buttons
@@ -362,6 +364,121 @@ textarea {
 /* =============
     Header
 ============= */
+#header {
+  background-color: #000; }
+  #header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    #header div h1 {
+      color: #fff;
+      font-family: 'Roboto Slab', serif;
+      font-size: 0.9375rem;
+      padding: 15px; }
+      #header div h1 span {
+        font-weight: 300; }
+    #header div i {
+      color: #fff;
+      padding: 15px;
+      font-size: 1.25rem; }
+
 /* =============
     Footer
+============= */
+/* =============
+    Marvel
+============= */
+#MARVEL {
+  background-image: url("../img/hero/MARVEL.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 25px;
+  height: 321px;
+  width: 555; }
+
+/* =============
+    Overview
+============= */
+#Overview {
+  font-family: 'Kodchasan', sans-serif;
+  background-color: #000;
+  padding-top: 15px; }
+  #Overview section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    #Overview section h1 {
+      font-weight: 600;
+      color: #fff;
+      font-size: 2.25rem;
+      transform: rotate(-90deg);
+      padding-top: 65px; }
+    #Overview section img {
+      height: 187px;
+      width: 187px; }
+  #Overview article {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    #Overview article p {
+      background-color: #fff;
+      font-size: 1rem;
+      line-height: 20px;
+      text-align: justify;
+      padding: 10px;
+      font-weight: 300; }
+  #Overview div {
+    padding-bottom: 10px; }
+    #Overview div p {
+      background-color: #fff;
+      font-size: 1rem;
+      line-height: 20px;
+      text-align: justify;
+      padding: 10px;
+      font-weight: 300; }
+
+/* ===================
+    Artifacts-header
+====================== */
+#Artifacts-header div {
+  background-image: url("../img/gallery/comic-man.jpg");
+  background-position: right;
+  background-size: cover;
+  height: 229px;
+  padding: 10px; }
+  #Artifacts-header div h2 {
+    font-family: 'Kodchasan', sans-serif;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center; }
+    #Artifacts-header div h2 span {
+      font-size: 1.875rem;
+      padding-left: 5px; }
+
+/* =============
+    Artifacts
+============= */
+#Artifacts {
+  background-color: #000; }
+  #Artifacts article {
+    font-family: 'Kodchasan', sans-serif;
+    color: #fff;
+    font-size: 1rem; }
+    #Artifacts article p {
+      background-color: #B13A3D;
+      padding: 15px 30px;
+      text-align: justify; }
+  #Artifacts section {
+    font-family: 'Kodchasan', sans-serif;
+    color: #fff;
+    font-size: 1rem; }
+    #Artifacts section p {
+      padding: 25px;
+      text-align: justify;
+      font-weight: 300; }
+
+/* =============
+    Tickets
+============= */
+/* =============
+    Exhibit
 ============= */

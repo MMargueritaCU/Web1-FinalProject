@@ -1,0 +1,27 @@
+/* =============
+    Artifacts
+============= */
+#Artifacts{
+  background-color: $black;
+  article{
+    font-family: 'Kodchasan', sans-serif;
+    color: $white;
+    font-size: rem-calc(16);
+    p{
+      background-color: $red;
+      padding: 15px 30px;
+      text-align: justify;
+    }
+  }
+
+  section{
+    font-family: 'Kodchasan', sans-serif;
+    color: $white;
+    font-size: rem-calc(16);
+    p{
+      padding: 25px;
+      text-align: justify;
+      font-weight: 300;
+    }
+  }
+}

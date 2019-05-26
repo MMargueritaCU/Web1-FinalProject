@@ -1,0 +1,51 @@
+/* =============
+    Overview
+============= */
+#Overview{
+  font-family: 'Kodchasan', sans-serif;
+  background-color: $black;
+  padding-top: 15px;
+
+  section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    h1{
+      font-weight: 600;
+      color: $white;
+      font-size: rem-calc(36);
+      transform: rotate(-90deg);
+      padding-top: 65px;
+    }
+
+    img{
+      height: 187px;
+      width: 187px;
+    }
+  }
+
+  article{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    p{
+      background-color: $white;
+      font-size: rem-calc(16);
+      line-height: 20px;
+      text-align: justify;
+      padding: 10px;
+      font-weight: 300;
+    }
+  }
+
+  div{
+    padding-bottom: 10px;
+    p{
+      background-color: $white;
+      font-size: rem-calc(16);
+      line-height: 20px;
+      text-align: justify;
+      padding: 10px;
+      font-weight: 300;
+    }
+  }
+}
