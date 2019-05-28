@@ -1,3 +1,31 @@
 /* =============
     Exhibit
 ============= */
+#Exhibit{
+  background-color: $black;
+  background-image: url("../img/gallery/marvel-avengers-poster.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 232px;
+  width: 345px;
+
+  h1{
+    color: $white;
+    font-size: rem-calc(23);
+    font-weight: 500;
+    font-family: 'Kodchasan', sans-serif;
+    text-align: right;
+  }
+
+  p{
+    color: $white;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: rem-calc(16);
+    font-weight: 300;
+
+    span{
+      font-weight: 400;
+      font-style: italic;
+    }
+  }
+}

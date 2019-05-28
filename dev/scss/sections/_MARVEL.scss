@@ -7,5 +7,20 @@
   background-size: cover;
   padding: 25px;
   height: 321px;
-  width: 555;
+
+  h1{
+    display: flex;
+    justify-content: center;
+    background-color: $red;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: rem-calc(17);
+    margin: 270px 42px;
+    border: 3px solid $darkred;
+    padding: 3px 0;
+
+    a{
+      text-decoration: none;
+      color: $white;
+    }
+  }
 }

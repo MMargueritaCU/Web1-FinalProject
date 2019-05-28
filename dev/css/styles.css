@@ -385,6 +385,20 @@ textarea {
 /* =============
     Footer
 ============= */
+#footer {
+  background-color: #000;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  #footer p {
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 600;
+    font-family: 'Kodchasan', sans-serif; }
+  #footer i {
+    color: #fff; }
+
 /* =============
     Marvel
 ============= */
@@ -393,8 +407,19 @@ textarea {
   background-position: center;
   background-size: cover;
   padding: 25px;
-  height: 321px;
-  width: 555; }
+  height: 321px; }
+  #MARVEL h1 {
+    display: flex;
+    justify-content: center;
+    background-color: #B13A3D;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 1.0625rem;
+    margin: 270px 42px;
+    border: 3px solid #6B0003;
+    padding: 3px 0; }
+    #MARVEL h1 a {
+      text-decoration: none;
+      color: #fff; }
 
 /* =============
     Overview
@@ -474,11 +499,63 @@ textarea {
     #Artifacts section p {
       padding: 25px;
       text-align: justify;
-      font-weight: 300; }
+      font-weight: 300;
+      border-top: 15px solid #B13A3D;
+      border-left: 15px solid #B13A3D; }
 
 /* =============
     Tickets
 ============= */
+#Tickets {
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-bottom: 15px;
+  background-color: #DADADA; }
+  #Tickets h1 {
+    color: #fff;
+    font-family: 'Kodchasan', sans-serif;
+    background-color: #000;
+    padding: 6px;
+    margin-right: 215px;
+    font-size: 1.4375rem;
+    font-weight: 500;
+    line-height: 20px; }
+  #Tickets img {
+    width: 172px; }
+  #Tickets article p {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #000;
+    padding: 10px; }
+  #Tickets section p {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #000;
+    padding: 10px; }
+
 /* =============
     Exhibit
 ============= */
+#Exhibit {
+  background-color: #000;
+  background-image: url("../img/gallery/marvel-avengers-poster.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 232px;
+  width: 345px; }
+  #Exhibit h1 {
+    color: #fff;
+    font-size: 1.4375rem;
+    font-weight: 500;
+    font-family: 'Kodchasan', sans-serif;
+    text-align: right; }
+  #Exhibit p {
+    color: #fff;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 1rem;
+    font-weight: 300; }
+    #Exhibit p span {
+      font-weight: 400;
+      font-style: italic; }
