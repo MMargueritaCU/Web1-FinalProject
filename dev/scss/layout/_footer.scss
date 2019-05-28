@@ -1,20 +1,25 @@
 /* =============
     Footer
 ============= */
-#footer{
-  background-color: $black;
-  padding: 15px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  p{
-    color: $white;
-    font-size: rem-calc(18);
-    font-weight: 600;
-    font-family: 'Kodchasan', sans-serif;
-  }
+footer{
+  div{
+    background-color: $black;
+    padding: 15px 0;
+    display: flex;
+    justify-content: flex-end;
 
-  i{
-    color: $white;
+    p{
+      color: $white;
+      font-size: rem-calc(18);
+      font-weight: 600;
+      font-family: 'Kodchasan', sans-serif;
+      padding-top: 5px;
+    }
+
+    i{
+      font-size: rem-calc(30);
+      padding-right: 20px;
+      padding-left: 10px;
+    }
   }
 }

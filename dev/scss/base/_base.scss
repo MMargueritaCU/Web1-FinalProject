@@ -10,6 +10,16 @@ ul{
   }
 }
 
+  a:link, a:visited{
+    color: $white;
+    transition: 0.25s;
+  }
+
+  a:hover, a:active{
+    color: $darkred;
+    transition: 0.25s;
+  }
+
 
 .content-grid{
     display: grid;

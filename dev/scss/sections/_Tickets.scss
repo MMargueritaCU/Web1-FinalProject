@@ -6,38 +6,54 @@
   padding-left: 5px;
   padding-bottom: 15px;
   background-color: $grey;
-  h1{
-    color: $white;
-    font-family: 'Kodchasan', sans-serif;
-    background-color: $black;
-    padding: 6px;
-    margin-right: 215px;
-    font-size: rem-calc(23);
-    font-weight: 500;
-    line-height: 20px;
-  }
 
-  img{
-    width: 172px;
-  }
+  div{
+    display: grid;
+    grid-template-areas: "head pic" "p1 p2";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 
-  article{
-    p{
-      font-family: 'Kodchasan', sans-serif;
-      font-size: rem-calc(16);
-      color: $white;
-      background-color: $black;
-      padding: 10px;
+    #head{
+        grid-area: head;
+        h1{
+          background-color: $black;
+          color: $white;
+          font-family: 'Kodchasan', sans-serif;
+          font-size: rem-calc(23);
+          font-weight: 500;
+          line-height: rem-calc(30);
+          padding: 10px;
+        }
     }
-  }
 
-  section{
-    p{
-      font-family: 'Kodchasan', sans-serif;
-      font-size: rem-calc(16);
-      color: $white;
-      background-color: $black;
-      padding: 10px;
+    #pic{
+      grid-area: pic;
+      width: 172px;
+    }
+
+    #p1{
+      grid-area: p1;
+      p{
+        font-family: 'Kodchasan', sans-serif;
+        font-size: rem-calc(16);
+        color: $white;
+        background-color: $black;
+        padding: 10px;
+        text-align: justify;
+        height: auto;
+      }
+    }
+
+    #p2{
+      grid-area: p2;
+      p{
+        font-family: 'Kodchasan', sans-serif;
+        font-size: rem-calc(16);
+        color: $white;
+        background-color: $black;
+        padding: 10px;
+        text-align: justify;
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 /* =============
     Header
 ============= */
-#header{
+header{
   background-color: $black;
   div{
     display: flex;
@@ -19,7 +19,6 @@
     }
 
     i{
-      color: $white;
       padding: 15px;
       font-size: rem-calc(20);
     }

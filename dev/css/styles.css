@@ -317,6 +317,14 @@ ul {
   ul li {
     list-style: none; }
 
+a:link, a:visited {
+  color: #fff;
+  transition: 0.25s; }
+
+a:hover, a:active {
+  color: #6B0003;
+  transition: 0.25s; }
+
 .content-grid {
   display: grid;
   grid-template-columns: 10px auto 10px;
@@ -364,40 +372,41 @@ textarea {
 /* =============
     Header
 ============= */
-#header {
+header {
   background-color: #000; }
-  #header div {
+  header div {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
-    #header div h1 {
+    header div h1 {
       color: #fff;
       font-family: 'Roboto Slab', serif;
       font-size: 0.9375rem;
       padding: 15px; }
-      #header div h1 span {
+      header div h1 span {
         font-weight: 300; }
-    #header div i {
-      color: #fff;
+    header div i {
       padding: 15px;
       font-size: 1.25rem; }
 
 /* =============
     Footer
 ============= */
-#footer {
+footer div {
   background-color: #000;
   padding: 15px 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  #footer p {
+  justify-content: flex-end; }
+  footer div p {
     color: #fff;
     font-size: 1.125rem;
     font-weight: 600;
-    font-family: 'Kodchasan', sans-serif; }
-  #footer i {
-    color: #fff; }
+    font-family: 'Kodchasan', sans-serif;
+    padding-top: 5px; }
+  footer div i {
+    font-size: 1.875rem;
+    padding-right: 20px;
+    padding-left: 10px; }
 
 /* =============
     Marvel
@@ -418,8 +427,7 @@ textarea {
     border: 3px solid #6B0003;
     padding: 3px 0; }
     #MARVEL h1 a {
-      text-decoration: none;
-      color: #fff; }
+      text-decoration: none; }
 
 /* =============
     Overview
@@ -483,25 +491,49 @@ textarea {
     Artifacts
 ============= */
 #Artifacts {
-  background-color: #000; }
+  background-color: #000;
+  padding-bottom: 15px; }
   #Artifacts article {
     font-family: 'Kodchasan', sans-serif;
     color: #fff;
-    font-size: 1rem; }
-    #Artifacts article p {
+    font-size: 1rem;
+    display: grid;
+    grid-template-areas: ". red-para";
+    grid-template-columns: repeat(2, 1fr); }
+    #Artifacts article #red-para {
+      grid-area: red-para;
       background-color: #B13A3D;
       padding: 15px 30px;
-      text-align: justify; }
-  #Artifacts section {
+      text-align: justify;
+      width: 150px; }
+  #Artifacts section ul {
+    display: grid;
+    grid-template-areas: ". redLine";
+    grid-template-columns: 20% auto; }
+    #Artifacts section ul #red-line {
+      grid-area: redLine;
+      background-color: #B13A3D;
+      height: 15px;
+      width: 100%; }
+  #Artifacts ul {
     font-family: 'Kodchasan', sans-serif;
     color: #fff;
-    font-size: 1rem; }
-    #Artifacts section p {
-      padding: 25px;
+    font-size: 1rem;
+    display: grid;
+    grid-template-areas: ". line black-para";
+    grid-template-columns: repeat(3, 1fr); }
+    #Artifacts ul #black-para {
+      grid-area: black-para;
+      padding-top: 25px;
+      padding-right: 25px;
       text-align: justify;
       font-weight: 300;
-      border-top: 15px solid #B13A3D;
-      border-left: 15px solid #B13A3D; }
+      width: 230px; }
+    #Artifacts ul #line {
+      grid-area: line;
+      background-color: #B13A3D;
+      width: 15px;
+      margin-left: 15px; }
 
 /* =============
     Tickets
@@ -511,29 +543,43 @@ textarea {
   padding-left: 5px;
   padding-bottom: 15px;
   background-color: #DADADA; }
-  #Tickets h1 {
-    color: #fff;
-    font-family: 'Kodchasan', sans-serif;
-    background-color: #000;
-    padding: 6px;
-    margin-right: 215px;
-    font-size: 1.4375rem;
-    font-weight: 500;
-    line-height: 20px; }
-  #Tickets img {
-    width: 172px; }
-  #Tickets article p {
-    font-family: 'Kodchasan', sans-serif;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #000;
-    padding: 10px; }
-  #Tickets section p {
-    font-family: 'Kodchasan', sans-serif;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #000;
-    padding: 10px; }
+  #Tickets div {
+    display: grid;
+    grid-template-areas: "head pic" "p1 p2";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+    #Tickets div #head {
+      grid-area: head; }
+      #Tickets div #head h1 {
+        background-color: #000;
+        color: #fff;
+        font-family: 'Kodchasan', sans-serif;
+        font-size: 1.4375rem;
+        font-weight: 500;
+        line-height: 1.875rem;
+        padding: 10px; }
+    #Tickets div #pic {
+      grid-area: pic;
+      width: 172px; }
+    #Tickets div #p1 {
+      grid-area: p1; }
+      #Tickets div #p1 p {
+        font-family: 'Kodchasan', sans-serif;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #000;
+        padding: 10px;
+        text-align: justify;
+        height: auto; }
+    #Tickets div #p2 {
+      grid-area: p2; }
+      #Tickets div #p2 p {
+        font-family: 'Kodchasan', sans-serif;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #000;
+        padding: 10px;
+        text-align: justify; }
 
 /* =============
     Exhibit

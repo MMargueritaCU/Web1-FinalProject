@@ -3,27 +3,61 @@
 ============= */
 #Artifacts{
   background-color: $black;
+  padding-bottom: 15px;
   article{
     font-family: 'Kodchasan', sans-serif;
     color: $white;
     font-size: rem-calc(16);
-    p{
+    display: grid;
+    grid-template-areas: ". red-para";
+    grid-template-columns: repeat(2, 1fr);
+
+    #red-para{
+      grid-area: red-para;
       background-color: $red;
       padding: 15px 30px;
       text-align: justify;
+      width: 150px;
     }
   }
 
   section{
+    ul{
+      display: grid;
+      grid-template-areas: ". redLine";
+      grid-template-columns: 20% auto;
+
+      #red-line{
+        grid-area: redLine;
+        background-color: $red;
+        height: 15px;
+        width: 100%;
+      }
+    }
+  }
+
+  ul{
     font-family: 'Kodchasan', sans-serif;
     color: $white;
     font-size: rem-calc(16);
-    p{
-      padding: 25px;
+    display: grid;
+    grid-template-areas: ". line black-para";
+    grid-template-columns: repeat(3, 1fr);
+
+    #black-para{
+      grid-area: black-para;
+      padding-top: 25px;
+      padding-right: 25px;
       text-align: justify;
       font-weight: 300;
-      border-top: 15px solid $red;
-      border-left: 15px solid $red;
+      width: 230px;
+    }
+
+    #line{
+      grid-area: line;
+      background-color: $red;
+      width: 15px;
+      margin-left: 15px
     }
   }
 }

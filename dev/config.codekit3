@@ -59,50 +59,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/img/gallery/baby-groot.jpg": {
-		"ft": 16384,
-		"iS": 44496,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/gallery/baby-groot.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/gallery/comic-man.jpg": {
-		"ft": 16384,
-		"iS": 74523,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/gallery/comic-man.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/gallery/marvel-avengers-poster.jpg": {
-		"ft": 16384,
-		"iS": 699754,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/gallery/marvel-avengers-poster.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/hero/MARVEL.jpg": {
-		"ft": 16384,
-		"iS": 469716,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/hero/MARVEL.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
