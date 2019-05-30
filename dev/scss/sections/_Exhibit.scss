@@ -4,10 +4,11 @@
 #Exhibit{
   background-color: $black;
   background-image: url("../img/gallery/marvel-avengers-poster.jpg");
-  background-position: center;
+  background-position: -200px 30px;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 232px;
-  width: 345px;
+  padding-top: 15px;
+  height: 260px;
 
   h1{
     color: $white;
@@ -15,6 +16,8 @@
     font-weight: 500;
     font-family: 'Kodchasan', sans-serif;
     text-align: right;
+    padding-right: 10px;
+    padding-bottom: 20px;
   }
 
   p{
@@ -22,6 +25,8 @@
     font-family: 'Kodchasan', sans-serif;
     font-size: rem-calc(16);
     font-weight: 300;
+    width: 180px;
+    padding-bottom: 30px;
 
     span{
       font-weight: 400;
