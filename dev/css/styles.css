@@ -435,7 +435,7 @@ footer div {
 #Overview {
   font-family: 'Kodchasan', sans-serif;
   background-color: #000;
-  padding-top: 15px; }
+  padding-top: 30px; }
   #Overview section {
     display: flex;
     flex-direction: row;
@@ -450,23 +450,23 @@ footer div {
       height: 187px;
       width: 187px; }
   #Overview article {
-    padding-top: 15px;
-    padding-bottom: 15px; }
+    padding-top: 40px;
+    padding-bottom: 40px; }
     #Overview article p {
       background-color: #fff;
       font-size: 1rem;
       line-height: 20px;
-      text-align: justify;
+      text-align: center;
       padding: 10px;
       font-weight: 300; }
   #Overview div {
-    padding-bottom: 10px; }
+    padding-bottom: 20px; }
     #Overview div p {
       background-color: #fff;
       font-size: 1rem;
-      line-height: 20px;
-      text-align: justify;
-      padding: 10px;
+      line-height: 25px;
+      text-align: center;
+      padding: 15px;
       font-weight: 300; }
 
 /* ===================
@@ -499,13 +499,13 @@ footer div {
     font-size: 1rem;
     display: grid;
     grid-template-areas: ". red-para";
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: 40% auto; }
     #Artifacts article #red-para {
       grid-area: red-para;
       background-color: #B13A3D;
+      line-height: 1.5625rem;
       padding: 15px 30px;
-      text-align: justify;
-      width: 150px; }
+      text-align: left; }
   #Artifacts section ul {
     display: grid;
     grid-template-areas: ". redLine";
@@ -521,19 +521,17 @@ footer div {
     font-size: 1rem;
     display: grid;
     grid-template-areas: ". line black-para";
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: 20% auto auto; }
     #Artifacts ul #black-para {
       grid-area: black-para;
-      padding-top: 25px;
-      padding-right: 25px;
-      text-align: justify;
-      font-weight: 300;
-      width: 230px; }
+      line-height: 1.5625rem;
+      padding: 25px 15px 0 25px;
+      text-align: left;
+      font-weight: 300; }
     #Artifacts ul #line {
       grid-area: line;
       background-color: #B13A3D;
-      width: 15px;
-      margin-left: 15px; }
+      width: 15px; }
 
 /* =============
     Tickets
@@ -545,7 +543,7 @@ footer div {
   #Tickets div {
     display: grid;
     grid-template-areas: "head pic" "p1 p2";
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto auto;
     grid-template-rows: repeat(2, 1fr); }
     #Tickets div #head {
       grid-area: head; }
@@ -573,7 +571,8 @@ footer div {
         color: #fff;
         background-color: #000;
         padding: 10px;
-        text-align: justify;
+        text-align: center;
+        line-height: 30px;
         height: auto;
         width: 105px;
         margin-top: -60px; }
@@ -585,11 +584,10 @@ footer div {
         color: #fff;
         background-color: #000;
         padding: 10px;
-        text-align: justify;
-        width: 115px;
+        text-align: center;
+        line-height: 30px;
         margin-top: -75px;
-        position: absolute;
-        z-index: 4; }
+        position: relative; }
 
 /* =============
     Exhibit
@@ -601,6 +599,7 @@ footer div {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 15px;
+  margin-top: -90px;
   height: 260px; }
   #Exhibit h1 {
     color: #fff;
@@ -616,7 +615,8 @@ footer div {
     font-size: 1rem;
     font-weight: 300;
     width: 180px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    text-align: right; }
     #Exhibit p span {
       font-weight: 400;
       font-style: italic; }

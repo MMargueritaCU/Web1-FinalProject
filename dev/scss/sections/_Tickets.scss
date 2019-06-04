@@ -9,7 +9,7 @@
   div{
     display: grid;
     grid-template-areas: "head pic" "p1 p2";
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto auto;
     grid-template-rows: repeat(2, 1fr);
 
     #head{
@@ -43,7 +43,8 @@
         color: $white;
         background-color: $black;
         padding: 10px;
-        text-align: justify;
+        text-align: center;
+        line-height: 30px;
         height: auto;
         width: 105px;
         margin-top: -60px;
@@ -58,11 +59,10 @@
         color: $white;
         background-color: $black;
         padding: 10px;
-        text-align: justify;
-        width: 115px;
+        text-align: center;
+        line-height: 30px;
         margin-top: -75px;
-        position: absolute;
-        z-index: 4;
+        position: relative;
       }
     }
   }

@@ -4,7 +4,7 @@
 #Overview{
   font-family: 'Kodchasan', sans-serif;
   background-color: $black;
-  padding-top: 15px;
+  padding-top: 30px;
 
   section{
     display: flex;
@@ -25,26 +25,26 @@
   }
 
   article{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     p{
       background-color: $white;
       font-size: rem-calc(16);
       line-height: 20px;
-      text-align: justify;
+      text-align: center;
       padding: 10px;
       font-weight: 300;
     }
   }
 
   div{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     p{
       background-color: $white;
       font-size: rem-calc(16);
-      line-height: 20px;
-      text-align: justify;
-      padding: 10px;
+      line-height: 25px;
+      text-align: center;
+      padding: 15px;
       font-weight: 300;
     }
   }

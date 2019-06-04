@@ -10,14 +10,14 @@
     font-size: rem-calc(16);
     display: grid;
     grid-template-areas: ". red-para";
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 40% auto;
 
     #red-para{
       grid-area: red-para;
       background-color: $red;
+      line-height: rem-calc(25);
       padding: 15px 30px;
-      text-align: justify;
-      width: 150px;
+      text-align: left;
     }
   }
 
@@ -42,22 +42,20 @@
     font-size: rem-calc(16);
     display: grid;
     grid-template-areas: ". line black-para";
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 20% auto auto;
 
     #black-para{
       grid-area: black-para;
-      padding-top: 25px;
-      padding-right: 25px;
-      text-align: justify;
+      line-height: rem-calc(25);
+      padding: 25px 15px 0 25px;
+      text-align: left;
       font-weight: 300;
-      width: 230px;
     }
 
     #line{
       grid-area: line;
       background-color: $red;
       width: 15px;
-      margin-left: 15px
     }
   }
 }
