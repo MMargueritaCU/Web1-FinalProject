@@ -1,0 +1,26 @@
+/* =============
+    Header
+============= */
+header{
+  background-color: $black;
+  div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h1{
+      color: $white;
+      font-family: 'Roboto Slab', serif;
+      font-size: rem-calc(15);
+      padding: 15px;
+      span{
+        font-weight: 300;
+      }
+    }
+
+    i{
+      padding: 15px;
+      font-size: rem-calc(20);
+    }
+  }
+}

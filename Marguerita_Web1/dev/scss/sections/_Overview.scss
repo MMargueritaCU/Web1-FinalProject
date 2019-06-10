@@ -1,0 +1,54 @@
+/* =============
+    Overview
+============= */
+#Overview {
+  background-color: $black;
+  font-family: 'Kodchasan', sans-serif;
+  padding-top: 30px;
+
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    h1 {
+      color: $white;
+      font-size: rem-calc(36);
+      font-weight: 600;
+      padding-top: 65px;
+      transform: rotate(-90deg);
+    }
+
+    img {
+      height: 187px;
+      width: 187px;
+    }
+  }
+
+  article {
+    padding-bottom: 40px;
+    padding-top: 40px;
+
+    p {
+      background-color: $white;
+      font-size: rem-calc(16);
+      font-weight: 300;
+      line-height: 20px;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+
+  div {
+    padding-bottom: 20px;
+
+    p {
+      background-color: $white;
+      font-size: rem-calc(16);
+      font-weight: 300;
+      line-height: 25px;
+      padding: 15px;
+      text-align: center;
+    }
+  }
+}

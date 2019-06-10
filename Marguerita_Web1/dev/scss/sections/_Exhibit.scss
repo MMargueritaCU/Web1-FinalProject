@@ -1,0 +1,54 @@
+/* =============
+    Exhibit
+============= */
+#Exhibit {
+  background-color: $black;
+  margin-top: -80px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+
+  section {
+    background-image: url("../img/gallery/marvel-avengers-poster.jpg");
+    background-position: -137px 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 240px;
+
+    h1 {
+      color: $white;
+      font-family: 'Kodchasan', sans-serif;
+      font-size: rem-calc(23);
+      font-weight: 600;
+      padding-bottom: 20px;
+      padding-right: 30px;
+      text-align: right;
+    }
+
+    article {
+      color: $white;
+      display: grid;
+      font-family: 'Kodchasan', sans-serif;
+      font-size: rem-calc(16);
+      font-weight: 300;
+      grid-template-areas: ". info";
+      grid-template-columns: repeat(2, 175px);
+      text-align: right;
+      width: 180px;
+
+      #info {
+        grid-area: info;
+
+        p {
+          margin-top: -10px;
+          padding-bottom: 25px;
+        }
+      }
+
+      span {
+        font-style: italic;
+        font-weight: 600;
+        line-height: 30px;
+      }
+    }
+  }
+}

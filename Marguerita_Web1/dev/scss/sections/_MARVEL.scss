@@ -1,0 +1,34 @@
+/* =============
+    Marvel
+============= */
+#MARVEL {
+  background-image: url("../img/hero/MARVEL.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 321px;
+  padding: 25px;
+
+  h1 {
+    background-color: $gold;
+    border: 3px solid $darkGold;
+    display: flex;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: rem-calc(17);
+    font-weight: 600;
+    justify-content: center;
+    margin: 270px 42px;
+    padding: 3px 0;
+
+    a:link,
+    a:visited {
+      color: $black;
+      text-decoration: none;
+    }
+
+    a:active,
+    a:hover {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}

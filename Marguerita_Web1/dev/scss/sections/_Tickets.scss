@@ -1,0 +1,72 @@
+/* =============
+    Tickets
+============= */
+#Tickets {
+  background-color: $grey;
+  padding-left: 5px;
+  padding-top: 25px;
+
+  div {
+    display: grid;
+    grid-template-areas: "head pic" "p1 p2";
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(2, 1fr);
+
+    #head {
+      grid-area: head;
+
+      h1 {
+        background-color: $black;
+        color: $white;
+        font-family: 'Kodchasan', sans-serif;
+        font-size: rem-calc(23);
+        font-weight: 500;
+        height: 94px;
+        line-height: rem-calc(30);
+        padding: 10px;
+        width: 137px;
+      }
+    }
+
+    #pic {
+      grid-area: pic;
+      margin-left: -90px;
+      margin-top: -30px;
+      transform: rotate(35deg);
+      width: 225px;
+    }
+
+    #p1 {
+      grid-area: p1;
+
+      p {
+        background-color: $black;
+        color: $white;
+        font-family: 'Kodchasan', sans-serif;
+        font-size: rem-calc(16);
+        height: auto;
+        line-height: 30px;
+        margin-top: -60px;
+        padding: 10px;
+        text-align: center;
+        width: 105px;
+      }
+    }
+
+    #p2 {
+      grid-area: p2;
+
+      p {
+        background-color: $black;
+        color: $white;
+        font-family: 'Kodchasan', sans-serif;
+        font-size: rem-calc(16);
+        line-height: 30px;
+        margin-top: -75px;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+      }
+    }
+  }
+}

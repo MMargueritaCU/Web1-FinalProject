@@ -1,0 +1,62 @@
+/* =============
+    Artifacts
+============= */
+#Artifacts {
+  background-color: $black;
+  padding-bottom: 15px;
+
+  article {
+    color: $white;
+    display: grid;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: rem-calc(16);
+    grid-template-areas: ". red-para";
+    grid-template-columns: 40% auto;
+
+    #red-para {
+      background-color: $red;
+      grid-area: red-para;
+      line-height: rem-calc(25);
+      padding: 15px 30px;
+      text-align: left;
+    }
+  }
+
+  section {
+    ul {
+      display: grid;
+      grid-template-areas: ". redLine";
+      grid-template-columns: 20% auto;
+
+      #red-line {
+        background-color: $red;
+        grid-area: redLine;
+        height: 15px;
+        width: 100%;
+      }
+    }
+  }
+
+  ul {
+    color: $white;
+    display: grid;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: rem-calc(16);
+    grid-template-areas: ". line black-para";
+    grid-template-columns: 20% auto auto;
+
+    #black-para {
+      font-weight: 300;
+      grid-area: black-para;
+      line-height: rem-calc(25);
+      padding: 25px 15px 0 25px;
+      text-align: left;
+    }
+
+    #line {
+      background-color: $red;
+      grid-area: line;
+      width: 15px;
+    }
+  }
+}
